@@ -1,5 +1,5 @@
 # docker-basics<br/>
-reference: [thenewboston] (https://www.youtube.com/watch?v=gFjxB0Jn8Wo&list=PL6gx4Cwl9DGBkvpSIgwchk0glHLz7CQ-7&index=1&ab_channel=thenewboston)
+reference: [thenewboston](https://www.youtube.com/watch?v=gFjxB0Jn8Wo&list=PL6gx4Cwl9DGBkvpSIgwchk0glHLz7CQ-7&index=1&ab_channel=thenewboston)
 
 ## list container/image<br/>
 docker container ls -a<br/>
