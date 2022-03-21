@@ -1,27 +1,26 @@
-# docker-basics
+# docker-basics<br/>
+reference: https://www.youtube.com/watch?v=gFjxB0Jn8Wo&list=PL6gx4Cwl9DGBkvpSIgwchk0glHLz7CQ-7&index=1&ab_channel=thenewboston
+
+## list container/image<br/>
+docker container ls -a<br/>
+docker image ls -a<br/>
 
 
-
-# list container/image
-docker container ls -a
-docker image ls -a
-
-
-# common command
-docker container run imageID/imageTag *optionalCMD
-docker container create imageID/imageTag            # create only the container but it will not run it
-docker container start -a containerID/containerTag  # -a shows logs
-docker container stop containerID/containerTag
-docker container kill -f containerID/containerTag
-docker container rm containerID/containerTag
-docker container inspect containerID/containerTag
-docker system prune --all                           # clear all containers
+## common command<br/>
+docker container run imageID/imageTag *optionalCMD<br/>
+docker container create imageID/imageTag            # create only the container but it will not run it<br/>
+docker container start -a containerID/containerTag  # -a shows logs<br/>
+docker container stop containerID/containerTag<br/>
+docker container kill -f containerID/containerTag<br/>
+docker container rm containerID/containerTag<br/>
+docker container inspect containerID/containerTag<br/>
+docker system prune --all                           # clear all containers<br/>
 
 
-# enable interaction with a running containers
-docker container exec -it containerID CMD
+## enable interaction with a running containers<br/>
+docker container exec -it containerID CMD<br/>
 
 
-# build image from Dockerfile
-docker build -t userName/project-name .             # don't forget the .
-docker run -it -p localPortNum:containerPortNum imageID/imageTag
+## build image from Dockerfile<br/>
+docker build -t userName/project-name .             # don't forget the .<br/>
+docker run -it -p localPortNum:containerPortNum imageID/imageTag<br/>
