@@ -20,7 +20,10 @@ docker system prune --all                           # clear all unused resources
 ## enable interaction with a running containers<br/>
 docker exec -it containerID sh<br/>
 
-
 ## build image from Dockerfile<br/>
 docker build -t userName/project-name .             # don't forget the .<br/>
 docker run -p localPortNum:containerPortNum imageID/imageTag<br/>
+
+
+## sync changes in local folder to container
+docker run -v $(pwd):containerFilePath -p localPortNum:containerPortNum imageID/imageTag<br/>     # %cd% for windows
