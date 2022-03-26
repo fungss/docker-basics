@@ -14,13 +14,13 @@ docker container stop containerID/containerTag<br/>
 docker container kill -f containerID/containerTag<br/>
 docker container rm containerID/containerTag<br/>
 docker container inspect containerID/containerTag<br/>
-docker system prune --all                           # clear all containers<br/>
+docker system prune --all                           # clear all unused resources<br/>
 
 
 ## enable interaction with a running containers<br/>
-docker container exec -it containerID CMD<br/>
+docker exec -it containerID sh<br/>
 
 
 ## build image from Dockerfile<br/>
 docker build -t userName/project-name .             # don't forget the .<br/>
-docker run -it -p localPortNum:containerPortNum imageID/imageTag<br/>
+docker run -p localPortNum:containerPortNum imageID/imageTag<br/>
